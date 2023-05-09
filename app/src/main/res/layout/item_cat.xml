@@ -8,7 +8,10 @@
     app:strokeWidth="0dp"
     app:cardCornerRadius="@dimen/min_size"
     android:elevation="@dimen/micro_size"
-
+    android:layout_margin="@dimen/min_size"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
     >
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -17,9 +20,10 @@
         <ImageView
             android:id="@+id/ivCat"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             tools:src="@mipmap/ic_launcher"
             tools:scaleType="fitXY"
+            android:adjustViewBounds="true"
             tools:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
